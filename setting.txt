@@ -1,0 +1,28 @@
+npx create-react-app nazev_adresaře nebo "."
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+v souboru: tainwind.conig.js:
+
+  module.exports = {
+    content: ['./src/**/*.{js,jsx,ts,tsx}'],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  };
+
+index.css:
+
+  @tailwind base; 
+  @tailwind components;
+  @tailwind utilities;
+ 
+
+- Promazat soubory, které nebudu potřebovat - obrazky, testy,..
+
+
+npm run start
+
+
+
